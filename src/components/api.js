@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './Api.css';
 
 const API = () => {
 
@@ -18,8 +19,8 @@ const API = () => {
                         return(
                             <div>
                                 <ul>
-                                    <li>{collectData.name.common}</li>
-                                    <li>{collectData.flag}</li>    
+                                    <li className='style1'>Country: {collectData.name.common}</li>
+                                    <li className='style2'>National Flag: {collectData.flag}</li> 
                                 </ul>
                             </div>
                         )

@@ -20,7 +20,8 @@ const API = () => {
                             <div>
                                 <ul>
                                     <li className='style1'>Country: {collectData.name.common}</li>
-                                    <li className='style2'>National Flag: {collectData.flag}</li> 
+                                    <li className='style2'>Country Flag: <img {...collectData.flags.png} alt="Country Flag" /> </li>
+                                    <li className='style3'>Language: </li>
                                 </ul>
                             </div>
                         )

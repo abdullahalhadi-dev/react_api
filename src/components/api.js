@@ -12,17 +12,12 @@ const API = () => {
 
   return (
     <div>
-      <div className="api">
+      <div className="main">
         {users.map((collectData) => {
           return (
-            <div>
-              <ul>
-                <li className="style1">Country: {collectData.name.common}</li>
-                <li className="style2">
-                  Country Flag:{" "}
-                  <img src={collectData.flags.png} alt="Country Flag" />{" "}
-                </li>
-                <li className="style3">
+            <div className="single-div">
+                <h4>Country: {collectData.name.common}</h4>  
+                <h4>
                   Language:{" "}
                   {collectData.languages &&
                     Object.values(collectData.languages).map((lan) => (
@@ -30,8 +25,11 @@ const API = () => {
                         <span>{lan}</span>
                       </>
                     ))}
-                </li>
-              </ul>
+                </h4>
+                <h4>
+                  {" "}
+                  <img src={collectData.flags.png} alt="Country Flag" />{" "}
+                </h4>
             </div>
           );
         })}

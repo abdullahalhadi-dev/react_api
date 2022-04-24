@@ -1,20 +1,10 @@
-.style1{
-    background-color: bisque;
-    list-style: none;
-    font-size: 20px;
-    padding: 10px;
-}
-
-.style2{
-    background-color: aquamarine;
-    list-style: none;
-    font-size: 20px;
-    padding: 10px;
-}
-
-.style3{
-    background-color: aqua;
-    list-style: none;
-    font-size: 20px;
-    padding: 10px;
-}
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .single-div {
+    background-color: blueviolet;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+  }
